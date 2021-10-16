@@ -18,15 +18,16 @@ namespace MigrationsRunner
 
         static void Main(string[] args)
         {
-
+/*
             if(args.Count() != 1)
             {
                 throw new Exception("Número incorreto de argumentos");
             }
-
-            var connectionString = args[0];
+    */
+            //var connectionString = args[0];
 
             //string connectionString = "User ID=<user>;Password=<pwd>;Host=localhost;Port=<port>;Database=<db>;Pooling=true;";
+            string connectionString = "User ID=postgres;Password=alef123;Host=localhost;Port=5432;Database=Pokedex;Pooling=true;";
             var serviceProvider = CreateServices(connectionString);
 
             // Put the database update into a scope to ensure
